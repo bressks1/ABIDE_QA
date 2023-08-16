@@ -13,11 +13,12 @@ To run this processing pipeline you will need to download the following XNAT ass
 - Process label: connprep-asdr-dv_v2, Assessors: FD.txt and DVARS.txt
 - Process lavel: cat12_ss2p0_v2, Assessors: PDF
 
-[1] Extract FD and DVARS values, calculate JointSpikes - use script FD_DVARS_extract_values_loop.py 
-[2] Extract IQR and GRADE - use script cat12_extract_values_loop.py 
-[3] Merge outputs of Steps 1 & 2, and apply tresholds to exclude subjects based on the criteria stated above - merge_and_apply_tresholds.py
-[3] Randomly select subjects for manual QA - use script QA_selection.R 
-[4] Perform manual QA, open cat12 PDFs in browser - use script open_cat12_PDFs.py to open PDFs in browser so you don't have to click through subfolders 
+Pipeline steps: 
+- [1] Extract FD and DVARS values, calculate JointSpikes - use script FD_DVARS_extract_values_loop.py 
+- [2] Extract IQR and GRADE - use script cat12_extract_values_loop.py 
+- [3] Merge outputs of Steps 1 & 2, and apply tresholds to exclude subjects based on the criteria stated above - merge_and_apply_tresholds.py
+- [4] Randomly select subjects for manual QA - use script QA_selection.R 
+- [5] Perform manual QA, open cat12 PDFs in browser - use script open_cat12_PDFs.py to open PDFs in browser so you don't have to click through subfolders 
 
    
   
